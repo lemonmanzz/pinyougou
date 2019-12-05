@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/security
+http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!-- 定义放行的登录页面及静态资源-->
+    <http pattern="/login.html" security="none"/>
+    <http pattern="/css/**" security="none"/>
+    <http pattern="/img/**" security="none"/>
+    <http pattern="/js/**" security="none"/>
+    <http pattern="/plugins/**" security="none"/>
+    <http pattern="/layer/**" security="none"/>
+
+    <http use-expressions="false">
+        <!-- 定义角色与资源的映射关系-->
+        <!-- 说明：如果上面没有设置use-expressions="false"，则默认值为true,此时就要
+        在下面的access 中定义成下面的样式-->
+        <!-- <intercept-url pattern="/**" access="hasRole('ROLE_ADMIN')"/> -->
+        <intercept-url pattern="/**" access="ROLE_ADMIN"/>
+        <!-- 下面的这种写法，是系统帮我们生成的表单，实际开发中很少使用-->
+        <!-- <form-login/> -->
+        <!-- 自定义表单常用属性说明：
+        login-page:代表登录页面
+        default-target-url：代表登录成功后跳转到的目标页面
+        authentication-failure-url:代表登录失败后跳转到的页面
+        always-use-default-target:代表总是跳转到由default-target-url 属性所指
+        定的页面上去。
+        -->
+        <form-login login-page="/login.html" authentication-failure-url="/login.html" default-target-url="/admin/index.html" always-use-default-target="true"/>
+        <headers>
+            <!-- 如果页面中使用了框架，则需要添加此属性，否则，框架不能使用-->
+            <frame-options policy="SAMEORIGIN"/>
+        </headers>
+        <csrf disabled="true"/>
+        <!-- 添加退出功能（注销） -->
+        <logout/>
+    </http>
+    <authentication-manager>
+        <authentication-provider>
+            <user-service>
+                <user name="admin" authorities="ROLE_ADMIN" password="123"/>
+                <user name="zhangsan" authorities="ROLE_ADMIN" password="123"/>
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+
+</beans:beans>

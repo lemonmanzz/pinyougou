@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:Context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--定义扫描包-->
+    <Context:component-scan base-package="com.pinyougou.page"/>
+    <bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="tcp://192.168.25.128:61616"/>
+    </bean>
+    <bean id="connectionFactoryActiveMQ" class="org.springframework.jms.connection.SingleConnectionFactory">
+        <property name="targetConnectionFactory" ref="targetConnectionFactory"/>
+    </bean>
+    <!--定义目标对象，用于新建静态页面-->
+    <bean id="genStaticHtml" class="org.apache.activemq.command.ActiveMQTopic">
+        <constructor-arg name="name" value="gen-static-html"/>
+    </bean>
+    <!--定义目标对象，用于删除静态页面-->
+    <bean id="deleteStaticHtml" class="org.apache.activemq.command.ActiveMQTopic">
+        <constructor-arg name="name" value="delete-static-html"/>
+    </bean>
+    <!--配置监听容器，用于监听新建静态页面的消息-->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactoryActiveMQ"/>
+        <property name="destination" ref="genStaticHtml"/>
+        <property name="messageListener" ref="genStaticHtmlListener"/>
+    </bean>
+    <!--配置监听容器，用于监听删除静态页面的消息-->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactoryActiveMQ"/>
+        <property name="destination" ref="genStaticHtml"/>
+        <property name="messageListener" ref="deleteStaticHtmlListener"/>
+    </bean>
+</beans>

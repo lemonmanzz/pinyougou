@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--0.定义包扫描路径-->
+    <context:component-scan base-package="top.lemonman.listener"/>
+    <!--1.创建jms原生工厂类-->
+    <bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="tcp://192.168.25.128:61616"/>
+    </bean>
+    <!--2.配置spring包装jms工厂类-->
+    <bean id="connectionFactory1" class="org.springframework.jms.connection.SingleConnectionFactory">
+        <constructor-arg name="targetConnectionFactory" ref="targetConnectionFactory"/>
+    </bean>
+    <!--3.配置目标对象，采用点对点的方式-->
+    <bean id="springQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg name="name" value="spring-queue"/>
+    </bean>
+    <!--4.配置监听容器-->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory1"/>
+        <property name="destination" ref="springQueue"/>
+        <property name="messageListener" ref="myMessageListener"/>
+    </bean>
+
+</beans>

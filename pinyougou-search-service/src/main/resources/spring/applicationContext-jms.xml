@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--1.扫描包路径-->
+    <context:component-scan base-package="com.pinyougou.search"/>
+    <!--2.配置jms原生连接工厂-->
+    <bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="tcp://192.168.25.128:61616"/>
+    </bean>
+    <!--3.配置spring原生连接工厂-->
+    <bean id="connectionFactoryActiveMQ" class="org.springframework.jms.connection.SingleConnectionFactory">
+        <property name="targetConnectionFactory" ref="targetConnectionFactory"/>
+    </bean>
+    <!--4.配置目标对象，添加到索引库-->
+    <bean id="goodsToSolrQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg name="name" value="goods-to-solr-queue"/>
+    </bean>
+    <!--4.2 配置目标对象，删除索引库-->
+    <bean id="goodsDeleteQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg name="name" value="goods-delete-queue"/>
+    </bean>
+    <!--5.配置监听容器 用于监听，添加至索引库  -->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactoryActiveMQ"/>
+        <property name="messageListener" ref="goodsToSolrListener"/>
+        <property name="destination" ref="goodsToSolrQueue"/>
+    </bean>
+    <!--5.2 从索引库中删除-->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="destination" ref="goodsDeleteQueue"/>
+        <property name="messageListener" ref="goodsDeleteFromSolrListener"/>
+        <property name="connectionFactory" ref="connectionFactoryActiveMQ"/>
+    </bean>
+</beans>

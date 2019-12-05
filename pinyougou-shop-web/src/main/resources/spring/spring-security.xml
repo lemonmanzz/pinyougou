@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!--1.放行指定的静态资源-->
+    <http security="none" pattern="/css/**"/>
+    <http security="none" pattern="/img/**"/>
+    <http security="none" pattern="/js/**"/>
+    <http security="none" pattern="/plugins/**"/>
+    <http security="none" pattern="/register.html"/>
+    <http security="none" pattern="/shoplogin.html"/>
+    <http security="none" pattern="/seller/add.do" />
+    <!--2.定义http请求相关-->
+    <http use-expressions="false">
+        <intercept-url pattern="/**" access="ROLE_ADMIN"/>
+        <!--2.1）属性解析：-->
+        <!--login-page:代表登录页-->
+        <!--default-target-url:代表登录成功后自动跳转的页面-->
+        <!--authentication-failure-url:代表登录失败后跳转的页面-->
+        <!--always-use-default-target:不管登录前访问哪个页面，只能登录成功就跳转到目标页面-->
+        <form-login login-page="/shoplogin.html" default-target-url="/admin/index.html" authentication-failure-url="/shoplogin.html"
+                    always-use-default-target="true"/>
+        <!--2.2）如果在项目的页面中有框架，必须要设置如下内容，否则，框架不能使用-->
+        <headers>
+            <frame-options policy="SAMEORIGIN"/>
+        </headers>
+        <!--2.3)禁用跨站请求伪造-->
+        <csrf disabled="true"/>
+        <!--2.4)使用注销功能-->
+        <logout/>
+    </http>
+    <!--3.定义认证管理器-->
+    <authentication-manager>
+        <authentication-provider user-service-ref="userService">
+            <!--3.1）指定加密器，将商家的密码进行加密后再与数据库进行比对-->
+            <password-encoder ref="encoder"/>
+        </authentication-provider>
+    </authentication-manager>
+    <!--3.2）定义密码加密器对象-->
+    <beans:bean id="encoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+    <!--4.定义userService对象，用于当前的商家的角色的验证-->
+    <beans:bean id="userService" class="com.pinyougou.shop.service.UserDetailServiceImpl">
+        <beans:property name="sellerService" ref="sellerService"/>
+    </beans:bean>
+    <!--5.从zookeeper注册中心中取得serllerService这个服务-->
+    <dubbo:application name="pinyougou-shop-web"/>
+    <dubbo:registry address="zookeeper://192.168.25.128:2181"/>
+    <dubbo:reference id="sellerService" interface="com.pinyougou.sellergoods.service.SellerService"/>
+</beans:beans>
