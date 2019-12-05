@@ -2,6 +2,7 @@ package com.pinyougou.order.service;
 
 import com.pinyougou.pojo.PageResult;
 import com.pinyougou.pojo.TbOrder;
+import com.pinyougou.pojo.TbPayLog;
 
 import java.util.List;
 
@@ -18,4 +19,7 @@ public interface OrderService {
 
     void delete(Long[] ids);
 
+    TbPayLog findPayLogByUsername(String username);
+
+    void updateOrderStatus(String out_trade_no, String transaction_id);
 }

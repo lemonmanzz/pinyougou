@@ -1,5 +1,7 @@
 package com.pinyougou.pay.service;
 
+import com.pinyougou.pojo.TbPayLog;
+
 import java.util.Map;
 
 public interface PayService {

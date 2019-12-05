@@ -15,7 +15,7 @@ app.controller("payController", function ($scope, $controller,$location, payServ
                 value: response.code_url
             })
         })
-    }
+    };
     //2.向微信后台发出查询订单的请求
     queryPayStatus=()=>{
         payService.queryPayStatus($scope.out_trade_no).success(response=>{
@@ -30,9 +30,9 @@ app.controller("payController", function ($scope, $controller,$location, payServ
 
             }
         })
-    }
+    };
     //3.定义取得从pay.html页面到paysuccess.html这个页面传过来的参数
     $scope.getMoney=()=>{
         return $location.search()["money"];
     }
-})
+});
