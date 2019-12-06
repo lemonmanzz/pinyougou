@@ -2,13 +2,406 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8c3846a-b398-4714-adcd-be2790ab38fd" name="Default" comment="品优购">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-interface/pinyougou-seckill-interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-interface/src/main/java/com/pinyougou/seckill/service/SecKillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-service/src/main/java/com/pinyougou/seckill/service/impl/SecKillServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-service/src/main/resources/spring/applicationContext-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/pinyougou-seckill-web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/java/com/pinyougou/seckill/controller/SecKillGoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/java/com/pinyougou/service/UserDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/resources/spring/spring-security.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/resources/spring/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-JD-index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-addressList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-cooperation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-getOrderInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-login-manage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-myOrder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-pay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-payfail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-paysuccess.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-sampling.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-seckill-index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-seckill-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-seckillOrder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-shop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-shoplogin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-success-cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-weixinpay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/pages-zoom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/webbase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/widget-cartPanelView.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/css/widget-jquery.autocomplete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/57b51ea9Nb862ca5e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/b2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/buy001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/buy002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/buy01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/cooperation_banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/down-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/dp01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/dp02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/dp03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/dp04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/empty_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/erweima.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/fail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/gocart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/gocart01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/gotop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/icon-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/intro01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/intro02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/intro03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/itemlike01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/itemlike02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/itemlike03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/itemlike04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/itemlike05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/itemlike06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/l-m01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/list.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/login-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/manage-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/mobile01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/mobile02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/mobile03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/mobile04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/mobile05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/mobile06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/part01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/part02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/part03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/pay5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/phone14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/photo_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/sampling_head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/seckillbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/shi_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/shop-intro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/shop-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/shop-part.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/t.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/title_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/_/y24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/account.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/ad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/ad1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/ali.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/itemlike/itemlike01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/itemlike/itemlike02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/itemlike/itemlike03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/itemlike/itemlike04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/itemlike/itemlike05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/itemlike/itemlike06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/fail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/pay5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/pay/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/dp01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/dp02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/dp03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/dp04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/intro01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/intro02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/intro03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/l-m01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/mobile01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/mobile02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/mobile03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/mobile04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/mobile05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/mobile06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/part01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/part02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/part03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/phone/phone14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/success-cart/buy001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/success-cart/buy002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/success-cart/buy01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/success-cart/gocart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/success-cart/gocart01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/zoom/b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/zoom/b2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/zoom/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/zoom/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/zoom/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/assets/img/zoom/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/banner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/barrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/brand_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/cartPanelViewIcons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/choosed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/duihuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/erweima.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-b01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-b02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/floor-1-b03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/goods.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/icon-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/interest01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/interest02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/interest03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/interest04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/interest05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/interest06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/like_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/linker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/loginbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/mod-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/phone-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/quan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/sina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/today01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/today02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/today03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/today04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/wx_cz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/img/zoom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/base_pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/controller/baseController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/controller/secKillController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/czFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/model/cartModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/addressList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/city-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/getOrderInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/jquery.slideunlock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/login-manage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/person-collect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/person-footmark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/seckill-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/shoplogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/pages/sm-city-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/birthday/birthday.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/citypicker/distpicker.data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/citypicker/distpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/jquery-placeholder/jquery.placeholder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/jquery.easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/jquery.jqzoom/jquery.jqzoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/jquery.jqzoom/zoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/sui/sui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/plugins/upload/uploadPreview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/service/secKillService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/widget/cartPanelView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/widget/jquery.autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/widget/nav-portal-top.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/widget/nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/angularjs/angular-animate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/angularjs/angular-route.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/angularjs/angular.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/angularjs/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/angularjs/pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/cssgrids/cssgrids-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/jquery-placeholder/jquery.placeholder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/jquery.easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/jquery.jqzoom/jquery.jqzoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/jquery.jqzoom/zoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/normalize/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/sui/sui-append.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/sui/sui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/sui/sui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou-cart-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/src/main/java/com/pinyougou/cart/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou-cart-web/src/main/java/com/pinyougou/cart/controller/PayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/js/controller/payController.js" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/js/controller/payController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou-order-interface/src/main/java/com/pinyougou/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou-order-interface/src/main/java/com/pinyougou/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/src/main/java/com/pinyougou/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou-order-service/src/main/java/com/pinyougou/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou-pay-interface/src/main/java/com/pinyougou/pay/service/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou-pay-interface/src/main/java/com/pinyougou/pay/service/PayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/target/classes/com/pinyougou/cart/service/impl/CartServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/target/classes/spring/applicationContext-service.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-service/target/tomcat/logs/access_log.2019-12-05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/classes/com/pinyougou/cart/controller/CartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/classes/com/pinyougou/cart/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/classes/com/pinyougou/cart/controller/PayController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/classes/com/pinyougou/service/UserDetailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/classes/spring/spring-security.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/classes/spring/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-cart-web/target/tomcat/logs/access_log.2019-12-05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-interface/target/classes/com/pinyougou/order/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-interface/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-interface/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-interface/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-interface/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-interface/target/pinyougou-order-interface-8.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/target/classes/com/pinyougou/order/service/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/target/classes/spring/applicationContext-service.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-order-service/target/tomcat/logs/access_log.2019-12-05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-interface/target/classes/com/pinyougou/pay/service/PayService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-interface/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-interface/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-interface/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-interface/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-interface/target/pinyougou-pay-interface-8.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/classes/com/pinyougou/pay/service/impl/PayServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/classes/properties/weixin.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/classes/spring/applicationContext-service.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinyougou-pay-service/target/tomcat/logs/access_log.2019-12-05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/pinyougou-content-interface/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou-search-web/target/" />
@@ -47,6 +440,9 @@
     <ignored path="$PROJECT_DIR$/spring-boot-sms/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou-pay-service/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou-order-service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou-seckill-interface/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou-seckill-service/target/" />
+    <ignored path="$PROJECT_DIR$/pinyougou-seckill-web/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,75 +455,122 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PayServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pinyougou-pay-service/src/main/java/com/pinyougou/pay/service/impl/PayServiceImpl.java">
+      <file leaf-file-name="secKillController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/controller/secKillController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1306">
-              <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+            <state relative-caret-position="551">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="payController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/js/controller/payController.js">
+      <file leaf-file-name="secKillService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/service/secKillService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="174">
+              <caret line="6" column="60" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PayService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pinyougou-pay-interface/src/main/java/com/pinyougou/pay/service/PayService.java">
+      <file leaf-file-name="SecKillGoodsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/java/com/pinyougou/seckill/controller/SecKillGoodsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+            <state relative-caret-position="686">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
+                <element signature="e#1156#1157#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/cart.html">
+      <file leaf-file-name="SecKillService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-interface/src/main/java/com/pinyougou/seckill/service/SecKillService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecKillServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-service/src/main/java/com/pinyougou/seckill/service/impl/SecKillServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seckill-index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="185" column="116" selection-start-line="185" selection-start-column="116" selection-end-line="185" selection-end-column="116" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#3;n#li#0;n#ul#0;n#div#1;n#div#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="czFunction.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/czFunction.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pinyougou-order-service/src/main/java/com/pinyougou/order/service/impl/OrderServiceImpl.java">
+      <file leaf-file-name="base_pagination.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/base_pagination.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="171" column="76" selection-start-line="171" selection-start-column="76" selection-end-line="171" selection-end-column="76" />
+            <state>
+              <caret column="51" selection-start-column="51" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pinyougou-cart-service/pom.xml">
+      <file leaf-file-name="seckill-item.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="114" column="37" lean-forward="true" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
+            <state relative-caret-position="-145">
+              <caret line="234" column="34" selection-start-line="234" selection-start-column="34" selection-end-line="234" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CartServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pinyougou-cart-service/src/main/java/com/pinyougou/cart/service/impl/CartServiceImpl.java">
+      <file leaf-file-name="pagination.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/angularjs/pagination.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-435">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pay.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/pay.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state>
+              <folding>
+                <element signature="e#153#160#1" expanded="true" />
+                <element signature="e#451#458#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>立即抢购</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -144,6 +587,29 @@
         <option value="$PROJECT_DIR$/pinyougou-cart-web/src/main/java/com/pinyougou/cart/controller/PayController.java" />
         <option value="$PROJECT_DIR$/pinyougou-order-service/src/main/java/com/pinyougou/order/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/pinyougou-cart-service/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-service/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/java/com/pinyougou/service/UserDetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-service/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/controller/baseController.js" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/base.js" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/base_pagination.js" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/service/seckillController.js" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/service/seckillService.js" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/controller/seckillController.js" />
+        <option value="$PROJECT_DIR$/pinyougou-cart-web/src/main/java/com/pinyougou/cart/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/resources/spring/spring-security.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-item.html" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/service/secKillService.js" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/java/com/pinyougou/seckill/controller/SecKillGoodsController.java" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-interface/src/main/java/com/pinyougou/seckill/service/SecKillService.java" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-service/src/main/java/com/pinyougou/seckill/service/impl/SecKillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/controller/secKillController.js" />
+        <option value="$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-index.html" />
       </list>
     </option>
   </component>
@@ -172,12 +638,12 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="pinyougou-cart-service Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="pinyougou-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="pinyougou-cart-service Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="pinyougou-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -200,12 +666,15 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,25 +685,25 @@
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-cart-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-cart-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-cart-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-cart-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -242,7 +711,114 @@
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-cart-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-cart-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -251,25 +827,59 @@
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-pay-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-pay-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-pay-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-pay-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -277,18 +887,99 @@
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
-              <item name="pinyougou-pay-service" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-seckill-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,7 +989,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pinyougou.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myCode\pinyougou\pinyougou-seckill-web\src\main\webapp\plugins" />
+      <recent name="D:\myCode\pinyougou\pinyougou-seckill-web\src\main\webapp" />
+      <recent name="D:\myCode\pinyougou\pinyougou-seckill-service\src\main\resources\spring" />
+      <recent name="D:\myCode\pinyougou\pinyougou-seckill-web\src\main\resources\spring" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -312,7 +1017,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.pinyougou-order-service">
+  <component name="RunManager" selected="Maven.pinyougou-seckill-web">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -432,6 +1137,56 @@
         </option>
       </MavenSettings>
     </configuration>
+    <configuration name="pinyougou-seckill-service" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/pinyougou-seckill-service" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="pinyougou-seckill-web" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/pinyougou-seckill-web" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -458,6 +1213,8 @@
       <item itemvalue="Maven.pinyougou-pay-service" />
       <item itemvalue="Maven.pinyougou-cart-web" />
       <item itemvalue="Maven.pinyougou-order-service" />
+      <item itemvalue="Maven.pinyougou-seckill-service" />
+      <item itemvalue="Maven.pinyougou-seckill-web" />
       <item itemvalue="Maven.pinyougou-cart-service" />
     </list>
   </component>
@@ -473,6 +1230,7 @@
       <updated>1575538104822</updated>
       <workItem from="1575538107927" duration="2840000" />
       <workItem from="1575543245525" duration="7244000" />
+      <workItem from="1575603130639" duration="23382000" />
     </task>
     <task id="LOCAL-00001" summary="品优购">
       <created>1575538662453</created>
@@ -492,25 +1250,25 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10084000" />
+    <option name="totallyTimeSpent" value="33466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32897604" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32960597" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16027689" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4074074" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32861805" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.20127796" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837664" visible="true" weight="0.20340788" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
@@ -525,7 +1283,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32897604" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,13 +1350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/js/controller/cartController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1393">
-          <caret line="79" column="42" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/paysuccess.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -609,24 +1359,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/pay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="638">
           <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/cart.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-cart-service/src/main/java/com/pinyougou/cart/service/impl/CartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
+        <state relative-caret-position="609">
           <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-pay-service/src/main/java/com/pinyougou/pay/service/impl/PayServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1306">
+        <state relative-caret-position="2755">
           <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
         </state>
       </provider>
@@ -668,24 +1415,325 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-order-service/src/main/java/com/pinyougou/order/service/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
+        <state relative-caret-position="4321">
           <caret line="171" column="76" selection-start-line="171" selection-start-column="76" selection-end-line="171" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-cart-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="114" column="37" lean-forward="true" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
+        <state relative-caret-position="593">
+          <caret line="110" column="37" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-pay-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="122" column="10" selection-start-line="18" selection-start-column="4" selection-end-line="122" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/java/com/pinyougou/service/UserDetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="57" column="10" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-cart-service/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/model/cartModel.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/service/seckillController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/js/controller/cartController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2291">
+          <caret line="79" column="42" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-pojo/src/main/java/com/pinyougou/pojo/TbSeckillGoods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/java/com/pinyougou/cart/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/java/com/pinyougou/cart/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-640">
+          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-service/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/resources/spring/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1027">
+          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/controller/baseController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1301">
+          <caret line="148" column="32" lean-forward="true" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-cart-web/src/main/webapp/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="17" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/plugins/angularjs/pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#153#160#1" expanded="true" />
+            <element signature="e#451#458#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-interface/src/main/java/com/pinyougou/seckill/service/SecKillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-service/src/main/java/com/pinyougou/seckill/service/impl/SecKillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/java/com/pinyougou/seckill/controller/SecKillGoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="234" column="34" selection-start-line="234" selection-start-column="34" selection-end-line="234" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/czFunction.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/base_pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/service/secKillService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/js/controller/secKillController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-seckill-web/src/main/webapp/seckill-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="185" column="116" selection-start-line="185" selection-start-column="116" selection-end-line="185" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#3;n#li#0;n#ul#0;n#div#1;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>casclient-demo1:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>casclient-demo1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -41,7 +41,7 @@
     <!--4.配置服务的属性对象-->
     <beans:bean id="serviceProperties" class="org.springframework.security.cas.ServiceProperties">
         <!--4.1)配置本模块的地址，格式为：[模块地址 + /login/cas]-->
-        <beans:property name="service" value="http://localhost:9107/login/cas"/>
+        <beans:property name="service" value="http://localhost:9110/login/cas"/>
     </beans:bean>
     <!--5.配置casAuthenticationFilter-->
     <beans:bean id="casAuthenticationFilter" class="org.springframework.security.cas.web.CasAuthenticationFilter">
@@ -78,7 +78,7 @@
     <!--8.配置请求单点登出过滤器-->
     <beans:bean id="requestSingleLogoutFilter" class="org.springframework.security.web.authentication.logout.LogoutFilter">
         <!--8.1）配置单点登出时跳转到的页面-->
-        <beans:constructor-arg value="http://localhost:9100/cas/logout?service=http://localhost:9103"/>
+        <beans:constructor-arg value="http://localhost:9100/cas/logout?service=http://localhost:9110"/>
         <!--8.2）配置单点登出过滤器的处理器-->
         <beans:constructor-arg>
             <beans:bean class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler"/>

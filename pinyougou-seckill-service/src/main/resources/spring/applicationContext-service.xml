@@ -11,11 +11,11 @@
     </bean>
 
     <!--1.定义这个服务的名称-->
-    <dubbo:application name="pinyougou-cart-service"/>
+    <dubbo:application name="pinyougou-seckill-service"/>
     <!--2.指定用到的dubbo的协议-->
-    <dubbo:protocol name="dubbo" port="20887"/>
+    <dubbo:protocol name="dubbo" port="20890"/>
     <!--3.指定注册中心的地址-->
     <dubbo:registry address="zookeeper://192.168.25.128:2181"/>
     <!--4.指定这个服务要注册到zookeeper上时在指定的包下扫描-->
-    <dubbo:annotation package="com.pinyougou.cart.service.impl"/>
+    <dubbo:annotation package="com.pinyougou.seckill.service.impl"/>
 </beans>

@@ -13,9 +13,15 @@
     <link rel="stylesheet" type="text/css" href="css/pages-zoom.css" />
     <link rel="stylesheet" type="text/css" href="css/pages-seckill-item.css" />
     <link rel="stylesheet" type="text/css" href="css/widget-cartPanelView.css" />
+	<script type="text/javascript" src="plugins/angularjs/angular.min.js">  </script>
+
+	<script type="text/javascript" src="js/base.js">  </script>
+	<script type="text/javascript" src="js/service/secKillService.js">  </script>
+	<script type="text/javascript" src="js/controller/baseController.js">  </script>
+	<script type="text/javascript" src="js/controller/secKillController.js">  </script>
 </head>
 
-<body>
+<body ng-app="pinyougou" ng-controller="secKillController" ng-init="findOneSecKillGoods()">
 	<!-- 头部栏位 -->
 	<!--页面顶部-->
 <div id="nav-bottom">
@@ -173,14 +179,14 @@ $(function(){
 					<div class="zoom">
 						<!--默认第一个预览-->
 						<div id="preview" class="spec-preview">
-							<span class="jqzoom"><img jqimg="img/_/b1.png" src="img/_/s1.png" /></span>
+							<span class="jqzoom"><img jqimg="{{secKillGoods.smallPic}}" src="{{secKillGoods.smallPic}}" /></span>
 						</div>						
 					</div>
 					
 				</div>
 				<div class="fr itemInfo-wrap">
 					<div class="sku-name">
-						<h4>Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机</h4>
+						<h4>{{secKillGoods.title}}</h4>
 					</div>
 					<div class="news">
 						<span><img src="img/_/clock.png"/>品优秒杀</span>
@@ -194,11 +200,11 @@ $(function(){
 							</div>
 							<div class="fl price">
 								<i>¥</i>
-								<em>5299.00</em>
-								<span>原价：5699.00</span>
+								<em>{{secKillGoods.costPrice}}</em>
+								<span>原价：{{secKillGoods.price}}</span>
 							</div>
 							<div class="fr remark">
-								剩余库存：10
+								剩余库存：{{secKillGoods.stockCount}}
 							</div>
 						</div>
 						<div class="summary-wrap">

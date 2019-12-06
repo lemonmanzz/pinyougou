@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pinyougou-seckill-interface</artifactId>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.pinyougou</groupId>
+            <artifactId>pinyougou-pojo</artifactId>
+            <version>8.0.8</version>
+        </dependency>
+    </dependencies>
 
 </project>
