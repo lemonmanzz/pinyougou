@@ -101,11 +101,6 @@
         </dependency>
         <dependency>
             <groupId>com.pinyougou</groupId>
-            <artifactId>pinyougou-order-interface</artifactId>
-            <version>8.0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>com.pinyougou</groupId>
             <artifactId>pinyougou-pay-interface</artifactId>
             <version>8.0.8</version>
         </dependency>
