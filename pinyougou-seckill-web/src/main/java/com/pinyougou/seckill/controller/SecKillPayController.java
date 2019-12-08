@@ -5,6 +5,8 @@ import com.pinyougou.pay.service.PayService;
 import com.pinyougou.pojo.Result;
 import com.pinyougou.pojo.TbSeckillOrder;
 import com.pinyougou.seckill.service.SecKillOrderService;
+import com.pinyougou.utils.IdWorker;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,6 +22,8 @@ public class SecKillPayController {
     private SecKillOrderService secKillOrderService;
     @Reference
     private PayService payService;
+    @Autowired
+    private IdWorker idWorker;
 
     @RequestMapping("createNative")
     public Map  createNative(){
@@ -51,7 +55,7 @@ public class SecKillPayController {
             }
             if (map.get("trade_state").equals("SUCCESS")){//支付成功
                 //保存订单至数据库
-                secKillOrderService.saveOrderToDB(userId,Long.valueOf(out_trade_no),map.get("transaction_id"));
+                secKillOrderService.saveOrderToDB(userId,Long.valueOf(out_trade_no),idWorker.nextId()+"");
                 //返回
                 return new Result(true,"支付成功");
             }
@@ -64,6 +68,18 @@ public class SecKillPayController {
             time++;
             //一分钟超时
             if (time > 20){
+                //执行关单操作
+                Map<String,String> closeMap =  payService.closePay(out_trade_no);
+                if (!"SUCCESS".equals(closeMap.get("result_code"))){//等于SUCCESS表示正常关闭
+                    if (closeMap.get("err_code").equals("ORDERPAID")){//代表已经支付成功
+                        //将redis中的订单保存到数据库中
+                        secKillOrderService.saveOrderToDB(userId,Long.valueOf(out_trade_no),map.get("transaction_id").toString());
+                        return new Result(true,"支付成功");
+                    }
+
+                }
+                //从redis中删除订单，并且回复商品库存
+                secKillOrderService.deleteOrderFromRedis(userId,out_trade_no);
                 return new Result(false,"二维码超时");
             }
         }

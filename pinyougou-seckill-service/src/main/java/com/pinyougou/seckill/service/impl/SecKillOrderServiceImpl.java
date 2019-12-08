@@ -85,7 +85,54 @@ public class SecKillOrderServiceImpl implements SecKillOrderService {
      * 功能描述: 保存订单到数据库中
      */
     @Override
-    public void saveOrderToDB(String userId, Long aLong, Object transaction_id) {
+    public void saveOrderToDB(String userId, Long out_trade_no, String transaction_id) {
+        //根据用户id查询出订单
+        TbSeckillOrder seckillOrder = (TbSeckillOrder) redisTemplate.boundHashOps("secKillOrderList").get(userId);
+        //判断订单是否存在
+        if (seckillOrder == null){
+            throw new RuntimeException("对不起，订单不存在!");
+        }
+        if (seckillOrder.getId().longValue() != out_trade_no.longValue()){
+            throw new RuntimeException("两次订单不一致!");
+        }
+        //给订单设置属性值
+        seckillOrder.setPayTime(new Date());
+        seckillOrder.setStatus("1");
+        seckillOrder.setTransactionId(transaction_id);
+        //添加到数据库
+        seckillOrderMapper.insert(seckillOrder);
+        //从redis中删除
+        redisTemplate.boundHashOps("secKillOrderList").delete(userId);
+    }
+    /**
+     * @author: zhangyu
+     * @date: 2019/12/8
+     * @param: [userId, out_trade_no]
+     * @return: void
+     * 功能描述: 当支付超时时，从redis中删除订单
+     */
+    @Override
+    public void deleteOrderFromRedis(String userId, String out_trade_no) {
+        //通过用户id查询对应订单
+        TbSeckillOrder seckillOrder = (TbSeckillOrder) redisTemplate.boundHashOps("secKillOrderList").get(userId);
+        //判断是否同一个订单
+        if (seckillOrder != null && seckillOrder.getId().longValue() == new Long(out_trade_no).longValue()){
+            //从redis中删除订单
+            redisTemplate.boundHashOps("secKillOrderList").delete(userId);
+            //从redis中获取商品信息
+            TbSeckillGoods seckillGoods = (TbSeckillGoods) redisTemplate.boundHashOps("secKillGoodsList").get(seckillOrder.getSeckillId());
+            //判断redis中是否含有该商品
+            if (seckillGoods != null){
+                //库存加1
+                seckillGoods.setStockCount(seckillGoods.getStockCount()+1);
+            }else {
+                //查询数据库，得到商品信息
+                seckillGoods = seckillGoodsMapper.selectByPrimaryKey(seckillOrder.getId());
+                seckillGoods.setStockCount(seckillGoods.getStockCount()+1);
+            }
+            //将更新库存后的商品放入redis中
+            redisTemplate.boundHashOps("secKillGoodsList").put(seckillGoods.getId(),seckillGoods);
+        }
 
     }
 }
